@@ -25,7 +25,7 @@ import com.demowebshop_POM.LoginPage;
 import com.demowebshop_POM.WelcomePage;
 
 public class BaseTest {
- 
+   
 	public WebDriver driver;
 	public static WebDriver sdriver;
 	public ExtentSparkReporter spark;
