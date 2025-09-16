@@ -55,11 +55,11 @@ public class BaseTest {
 	@BeforeClass
 	public void beforeClass() throws IOException {
 		System.out.println("@BeforeClass");
-		String browser = fileUtility.readDataFromPropertyFile("browserName");
-		String url = fileUtility.readDataFromPropertyFile("baseUrl");
+//		String browser = fileUtility.readDataFromPropertyFile("browserName");
+//		String url = fileUtility.readDataFromPropertyFile("baseUrl");
 
-//		String browser = System.getProperty("browserName");
-//		String url = System.getProperty("baseUrl");
+		String browser = System.getProperty("browserName");
+		String url = System.getProperty("baseUrl");
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
